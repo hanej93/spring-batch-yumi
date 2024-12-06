@@ -52,7 +52,6 @@ public class FourthBatch {
 
 	@Bean
 	public ItemStreamReader<Row> excelReader() {
-
 		try {
 			return new ExcelRowReader("C:\\Users\\kim\\Desktop\\yummi.xlsx");
 			//리눅스나 맥은 /User/형태로
