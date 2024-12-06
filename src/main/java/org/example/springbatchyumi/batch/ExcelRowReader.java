@@ -52,7 +52,6 @@ public class ExcelRowReader implements ItemStreamReader<Row> {
 
 	@Override
 	public Row read() {
-
 		if (rowCursor != null && rowCursor.hasNext()) {
 			currentRowNumber++;
 			return rowCursor.next();
@@ -68,7 +67,6 @@ public class ExcelRowReader implements ItemStreamReader<Row> {
 
 	@Override
 	public void close() throws ItemStreamException {
-
 		try {
 			if (workbook != null) {
 				workbook.close();
